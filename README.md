@@ -71,6 +71,7 @@ Contains project documentation artifacts, including:
 - 'Ao3MM Metadata Schema.md' - contains names, information types, and descriptions for Ao3MM metadata fields
 - 'Ao3MM Methodology and Access' - describes how Ao3MM works (step-by-step) and how it is meant to be used by fellow fans
 - 'Ao3MM Test Plan.md' - Contains functional and performance test recommendations (and future scope for implementing / expanding performance monitoring system)
+- 'IMT 542 Final Presentation_Stelter.pptx' - final presentation slide deck
 - 'info_structure_samples' - contains sample "before and after" files (.txt and .json respectively) as well as a file describing improvements to the existing information structure
 - 'original_assignment_submissions' - contains original versions of Group/project assignment files for reference
 
