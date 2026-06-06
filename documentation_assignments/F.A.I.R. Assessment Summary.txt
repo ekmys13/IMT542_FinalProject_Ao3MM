@@ -1,0 +1,23 @@
+F.A.I.R Assessment Summary (Adapted from IMT 542 G5: Measure capabilities of existing project structures using FAIR)
+Em Stelter, 6/5/2026 (thank you for your patience)
+
+Archive of Our Own does pretty well when assessed with F.A.I.R. criteria. Of the 34 F.A.I.R. criteria, Ao3 fails to meet only 9 of them, primarily in the Accessibility category (see: F.A.I.R. Assessment Table for specifics).
+
+Findability Notes: 
+- Ao3’s data and metadata are largely pretty findable. 
+- All fanworks and metadata tags have persistent, unique identifiers in the form of Ao3 URIs.
+- Highlight: F2: Data are described with rich metadata. Specifically, each fanwork has a set of defined metadata fields that precisely describe the contents of the fanwork within. This has the caveat that not all metadata fields are always filled out -- Ao3 users are only required to provide their work with a title and the name of a fandom, I believe, and sometimes choose to leave other metadata fields blank. However, this is often an intentional choice that reflects the nature of the work. (For example, someone posting an essay analyzing a TV show might not choose to use relationship tags for their Ao3 work, unlike someone writing a fanfic that centers on one or more character relationships.)
+
+Accessibility Notes: 
+- This is the main area where Ao3 struggles.
+- Strengths: Metadata is accessible via human intervention and resolves to a digital record (A1); Data is available through free access protocol (A2)
+- Areas of Improvement: There are no standardized access protocols for metadata (A1). There isn’t an easy way to download Ao3’s metadata tags in bulk. This is partly because Ao3’s metadata tags are organized in a partial folksonomy. There are some metadata categories that have standardized tags. (For example, Archive Warnings, which are essentially content warnings for sensitive or potentially upsetting subject matter, come from a controlled list.) But Ao3 users have access to a “freeform tags” field where they can add whatever tags they want. Ao3 has a team of volunteer “tag wranglers” who manage Ao3’s “Canonical Tags”, which become “canonized” into controlled lists of Fandoms, Characters, Relationships, or Additional Tags. Tag wranglers identify freeform tags that are synonymous or related to Canonical Tags and connect them within Ao3’s taxonomy. So Ao3’s metadata taxonomy is constantly changing. That said, there still isn’t an easy way to identify this.
+
+Interoperability Notes:
+- Ao3’s data and metadata are pretty interoperable. Because of the tag wranglers, Ao3’s metadata contains references to other metadata, and data (fanworks) use standardized & machine readable knowledge representation. (I.e. fanworks can be read by a human but they can also be downloaded in standard ereader formats directly from Ao3). 
+- Although Ao3’s metadata does not have an analogous machine-understandable knowledge representation.
+
+Reusability Notes: 
+- Both metadata and data comply with human and machine-readable community standards.
+- In my experience, Ao3 is a website where users are typically searching more than they are browsing. If somebody knows about Ao3 and wants to read Ao3 fanfiction, they probably already know what fandoms they’re interested in, what kinds of content they are interested in (or not interested in), which characters and relationships they want to read about, etc. Ao3 is essentially a library; it excels at making information findable if you know what you’re looking for. If you don’t know what you’re looking for, the site can be more challenging to use. 
+

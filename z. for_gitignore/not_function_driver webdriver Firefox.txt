@@ -1,0 +1,57 @@
+driver = webdriver.Firefox()
+driver.get("https://archiveofourown.org/works/73925776")
+
+# detect TOS agreement
+agreement_class_present = len(driver.find_elements(By.CLASS_NAME, value='agreement')) > 0
+print("TOS agreement section is present: ", str(agreement_class_present))
+
+# if agreement class is present, find TOS agreement checkboxes / submit button
+if agreement_class_present:
+
+    # alternative strategy
+    wait = WebDriverWait(driver, 10)
+    tos_agree = wait.until(EC.element_to_be_clickable((By.ID, 'tos_agree')))
+
+    # click checkboxes + accept TOS
+    actions = ActionChains(driver)
+    actions.move_to_element(tos_agree).perform()
+    actions.click(tos_agree).perform()
+
+    data_processing_agree = wait.until(EC.element_to_be_clickable((By.ID, 'data_processing_agree')))
+    actions.move_to_element(data_processing_agree).perform()
+    actions.click(data_processing_agree).perform()
+
+    accept_tos_button = wait.until(EC.element_to_be_clickable((By.ID, 'accept_tos')))
+    actions.move_to_element(accept_tos_button).perform()
+    actions.click(accept_tos_button).perform()
+
+else:
+    pass
+
+# detect adult content warning
+accept_adult_content_present = len(driver.find_elements(By.LINK_TEXT, 'Yes, Continue')) > 0
+print("Adult content warning is present: ", str(accept_adult_content_present))
+
+## THIS is where we're hitting a snag
+if accept_adult_content_present:
+    wait = WebDriverWait(driver, 15)
+    accept_adult_content_button = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, 'Yes, Continue')))
+
+    # click checkboxes + accept TOS
+    actions = ActionChains(driver)
+    actions.move_to_element(accept_adult_content_button).perform()
+    actions.click(accept_adult_content_button).perform()
+
+else:
+    pass
+
+# return page source / html doc
+driver.implicitly_wait(10) # seconds
+html = driver.page_source
+
+# Get the div element you are interested in
+work_meta_group = driver.find_element(By.CLASS_NAME, 'wrapper')
+
+work_meta_group_outer = work_meta_group.get_attribute('outerHTML')
+
+print(work_meta_group_outer)
